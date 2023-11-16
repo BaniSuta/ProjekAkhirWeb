@@ -1,0 +1,54 @@
+:root {
+  --bg-container: #efefef;
+  --primary-color: #222222;
+  --shadow: #8d8d8d;
+}
+
+.dark-mode {
+  --bg-container: #222222;
+  --primary-color: #efefef;
+  --shadow: #000000;
+}
+
+body {
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 150px auto;
+  flex-direction: column;
+  width: 40%;
+  background-color: var(--bg-container);
+  box-shadow: 2px 4px 20px var(--shadow);
+  border-radius: 15px;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -10px;
+}
+
+input {
+  height: 25px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+button.btn {
+  border: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 40px 0px 40px;
+}
+
+.row:last-child {
+  justify-content: center;
+  gap: 20px;
+}

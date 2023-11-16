@@ -1,0 +1,108 @@
+:root {
+  --bg-container: #efefef;
+  --primary-color: #222222;
+  --shadow: #8d8d8d;
+  --border-table: #111111;
+}
+
+.dark-mode {
+  --bg-container: #222222;
+  --primary-color: #efefef;
+  --shadow: #000000;
+  --border-table: #efefef;
+}
+
+body {
+  color: var(--primary-color);
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: var(--bg-container);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 2px 4px 20px var(--shadow);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: 1px solid var(--border-table);
+}
+
+td img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+td {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.secondary {
+  width: 55px;
+}
+
+.primary {
+  width: 50px;
+}
+
+.back {
+  position: absolute;
+  width: 60px;
+  top: 20px;
+  left: 30px;
+}
+
+.back-group {
+  position: absolute;
+  width: 60px;
+  top: 20px;
+  left: 120px;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 9px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .secondary {
+    width: 30px;
+  }
+}

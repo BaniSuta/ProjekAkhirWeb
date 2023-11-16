@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue:wght@600&display=swap");
+
+:root {
+  --color-bg: #d7d6d6;
+  --bg-headfoot: #121212;
+}
+
+.dark-mode {
+  --color-bg: #121212;
+  --bg-headfoot: #222222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  font-family: "Barlow";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Epilogue";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: var(--bg-headfoot);
+}
+
+header li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+.cont-btn {
+  margin-right: 20px;
+}
+
+.cont-btn button {
+  margin-right: 10px;
+}
+
+header ul {
+  display: flex;
+  margin-left: 80px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+footer {
+  background-color: var(--bg-headfoot);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #efefef;
+  height: 200px;
+}
+
+footer h2 {
+  font-size: 30px;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+.foot-left {
+  margin-left: 30px;
+}
+
+.secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.secondary:hover {
+  background-color: #53595f;
+}
+
+.success {
+  background-color: #198754;
+  color: #fff;
+}
+
+.success:hover {
+  background-color: #146a42;
+}
+
+.danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.danger:hover {
+  background-color: #952631;
+}
+
+.primary {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #0c55c4;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header {
+    font-size: 8px;
+  }
+
+  header ul {
+    margin-left: 0px;
+  }
+
+  header button {
+    font-size: 7px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 8px;
+  }
+}
