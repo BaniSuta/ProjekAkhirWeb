@@ -17,12 +17,12 @@ if (isset($_POST["submit"])) {
     $nama = htmlspecialchars($_POST["nama"]);
     $harga = $_POST["harga"];
     if ($_FILES["gambar"]["name"] != "") {
-        if ($ekstensigmbr == "jpg" || $ekstensigmbr == "jpeg" || $ekstensigmbr == "png") {
-            $gambar = $_FILES["gambar"]["name"];
-            $tmpName = $_FILES["gambar"]["tmp_name"];
+        $gambar = $_FILES["gambar"]["name"];
+        $tmpName = $_FILES["gambar"]["tmp_name"];
 
-            $ekstensigmbr = explode(".", $gambar);
-            $ekstensigmbr = strtolower(end($ekstensigmbr));
+        $ekstensigmbr = explode(".", $gambar);
+        $ekstensigmbr = strtolower(end($ekstensigmbr));
+        if ($ekstensigmbr == "jpg" || $ekstensigmbr == "jpeg" || $ekstensigmbr == "png") {
             $nm_gambar = date('Y-m-d');
             $nm_gambar .= ".";
             $nm_gambar .= strtolower($nama) . "-file";

@@ -49,7 +49,7 @@ if (isset($_SESSION["type"])) {
     </section>
 
     <div class="search">
-        <input type="search" class="keyword" name="keyword" id="keyword" placeholder="Search" autofocus autocomplete="off">
+        <input type="text" class="keyword" name="keyword" id="keyword" placeholder="Search" autofocus autocomplete="off">
         <button type="submit" id="tombol-cari" name="cari">Cari!</button>
     </div>
 
